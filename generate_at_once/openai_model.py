@@ -4,6 +4,7 @@ from typing import Type
 import json
 import re
 from litellm import completion
+from openai_tokenizer import OpenAITokenizer
 from dotenv import load_dotenv
 import os
 
@@ -11,12 +12,17 @@ load_dotenv()
 
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
+openai_tokenizer = OpenAITokenizer(encoding_name="cl100k_base")
+
 class OpenAIModel(Model):
     def __init__(self, model_name, context_limit):
         self.model_name = model_name
         self.context_limit = context_limit
 
     def completion_json(self, prompt: str, pydantic_model: Type[BaseModel]) -> dict:
+        if openai_tokenizer.count_tokens(prompt) > self.context_limit:
+            raise ValueError("The prompt exceeds the context limit of the model.")
+
         # Define the messages to send to the model
         messages = [
             {

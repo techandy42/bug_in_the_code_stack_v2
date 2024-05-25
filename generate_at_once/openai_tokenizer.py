@@ -1,4 +1,4 @@
-from tokenizers import Tokenizer
+from tokenizer import Tokenizer
 import tiktoken
 
 class OpenAITokenizer(Tokenizer):
