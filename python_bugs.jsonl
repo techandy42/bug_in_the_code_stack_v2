@@ -1,0 +1,20 @@
+{"name": "Incorrect Function Implementation", "description": "The implementation of the function is different than the name of the function", "implementation": "function", "num_samples": 1}
+{"name": "Incorrect Algorithm Implementation", "description": "A famous algorithm is implemented incorrectly", "implementation": "function", "num_samples": 1}
+{"name": "Unhandled Corner Cases", "description": "The algorithm is not handling all corner cases", "implementation": "function", "num_samples": 1}
+{"name": "Incorrect Usage of a Variable", "description": "The function is using a variable in an unintended way that should cause unexpected behaviours", "implementation": "function", "num_samples": 1}
+{"name": "Logic Errors in Conditional Statements", "description": "The function contains a conditional statement that has a logic error", "implementation": "function", "num_samples": 1}
+{"name": "Infinite Loop", "description": "The function contains an infinite loop", "implementation": "function", "num_samples": 1}
+{"name": "Infinite Recursion", "description": "The function contains an infinite recursion", "implementation": "function", "num_samples": 1}
+{"name": "Incorrect Loop Termination Condition", "description": "The loop termination condition is logically incorrect; do not cause an infinite loop", "implementation": "function", "num_samples": 1}
+{"name": "Incorrect Type Conversion", "description": "The function tries to convert one type to another type incorrectly", "implementation": "function", "num_samples": 1}
+{"name": "Floating Point Precision Error", "description": "The function contains a floating point precision error", "implementation": "function", "num_samples": 1}
+{"name": "Array Index Out of Bounds", "description": "Given an input array, the function tries to access an index that is out of bounds; do not make it obvious", "implementation": "function", "num_samples": 1}
+{"name": "Dictionary Key Error", "description": "Given an input dictionary, the function tries to access a key that does not exist; do not make it obvious", "implementation": "function", "num_samples": 1}
+{"name": "Divide by Zero", "description": "A number in the function is divided by a 0", "implementation": "function", "num_samples": 1}
+{"name": "Incorrect Regular Expressions", "description": "The function contains a regular expression that is incorrect", "implementation": "function", "num_samples": 1}
+{"name": "Incorrect Handling of Date and Time", "description": "The function contains a date and time operation that is incorrect", "implementation": "function", "num_samples": 1}
+{"name": "Incorrect Method Overriding in Subclasses", "description": "The overridden method in the subclass has a different method signature than the method in the superclass", "implementation": "class", "num_samples": 1}
+{"name": "Incorrect Use of super() in Inheritance", "description": "The subclass is incorrectly passing in the arguments to the super() method", "implementation": "class", "num_samples": 1}
+{"name": "Incorrect Use of Class Attributes", "description": "The class is using a class attribute in an unintended way that should cause unexpected behaviours", "implementation": "function", "num_samples": 1}
+{"name": "Incorrect Use of Class Methods & Instance Methods", "description": "The class is incorrectly using class methods or instance methods", "implementation": "class", "num_samples": 1}
+{"name": "Incorrect Implementation of Comparison Methods", "description": "The class is incorrectly implementing the comparison methods (e.g., __eq__, __lt__, etc.)", "implementation": "class", "num_samples": 1}
