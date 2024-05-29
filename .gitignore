@@ -1,2 +1,3 @@
 __pycache__/
 .env
+bug_gen_at_once/
